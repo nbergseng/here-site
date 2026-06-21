@@ -11,31 +11,79 @@
   <meta property="og:title" content="Here">
   <meta property="og:description" content="A small, quiet app for noticing your attention.">
   <meta property="og:type" content="website">
+
+  <template id="__bundler_thumbnail" data-bg-color="#f5f0e8">
+    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+      <rect width="240" height="240" fill="#f5f0e8"/>
+      <circle cx="120" cy="120" r="60" fill="none" stroke="#1f1d1a" stroke-width="3"/>
+      <circle cx="120" cy="120" r="35" fill="#1f1d1a"/>
+    </svg>
+  </template>
 </head>
 <body>
-  <main class="wrap">
+  <main>
     <section class="hero">
-      <span class="eyebrow">Here</span>
-      <h1>A quiet way to notice your attention.</h1>
-      <p class="lede">
-        Attention span shrinking? Audit your attention with Here.
-      </p>
-      <p>
-        Understand your attentional rhythm.
-      </p>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Here</span>
+          <h1>A quiet way to notice your attention.</h1>
+          <p class="lede">
+            Attention span shrinking? Audit your attention with Here.
+          </p>
+          <p>
+            Understand your attentional rhythm.
+          </p>
 
-      <div class="principles">
-        <span>Mindfulness, not measurement.</span>
-        <span>All local. No account or tracking, export your data anytime.</span>
-        <span>No streaks. No scores. Nothing to chase.</span>
+          <div class="principles">
+            <span>Log hands-free without opening the app: &ldquo;Hey Siri, log an attention drift.&rdquo;</span>
+            <span>Mindfulness, not measurement.</span>
+            <span>All local. No account or tracking, export your data anytime.</span>
+            <span>No streaks. No scores. Nothing to chase.</span>
+          </div>
+
+          <p class="cta">Coming soon to iPhone.</p>
+        </div>
+
+        <div class="hero-art">
+          <figure class="phone back"><div class="frame"><img src="screens/home.png" alt="Home screen with a single Drift button" width="1206" height="2622"></div></figure>
+          <figure class="phone front"><div class="frame"><img src="screens/today.png" alt="Today's attention at a glance" width="1206" height="2622"></div></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="screens" aria-label="A few screens from the app">
+      <div class="wrap-wide">
+        <span class="eyebrow">More screens</span>
       </div>
 
-      <p class="cta">Coming soon to iPhone.</p>
+      <div class="rail">
+        <figure class="phone">
+          <div class="frame"><img src="screens/home.png" alt="Home screen with a single Drift button" loading="lazy" width="1206" height="2622"></div>
+          <figcaption>One tap to log a drift.</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="frame"><img src="screens/categories.png" alt="Choosing what pulled your attention" loading="lazy" width="1206" height="2622"></div>
+          <figcaption>Tag what pulled you.</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="frame"><img src="screens/log.png" alt="A list of noticed moments by day" loading="lazy" width="1206" height="2622"></div>
+          <figcaption>Every moment, by day.</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="frame"><img src="screens/today.png" alt="Today's attention at a glance" loading="lazy" width="1206" height="2622"></div>
+          <figcaption>Your day at a glance.</figcaption>
+        </figure>
+        <figure class="phone">
+          <div class="frame"><img src="screens/week.png" alt="This week's attention" loading="lazy" width="1206" height="2622"></div>
+          <figcaption>Patterns over a week.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
-  <footer class="wrap">
+  <footer class="wrap-wide">
     <a href="privacy/">Privacy</a>
+    <a href="mailto:here@berg.cool">Contact</a>
   </footer>
 </body>
 </html>
