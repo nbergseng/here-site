@@ -155,10 +155,17 @@ a:hover { border-bottom-color: var(--fg-3); }
 }
 
 .cta {
+  display: inline-block;
   margin-top: 56px;
-  font-size: 14px;
-  letter-spacing: 0.4px;
-  color: var(--fg-3);
+  border-bottom: 0;
+  line-height: 0;
+}
+
+.cta img {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ─────────── Screens ─────────── */
